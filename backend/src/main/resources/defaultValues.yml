@@ -1,0 +1,178 @@
+buildings:
+  general:
+    maximumCount: 10
+    maximumLevel: 10
+  farm:
+    defaultHp: 100
+    defaultBuildingTime: 60
+    defaultDestroyTime: 10
+    price: 100
+    food:
+      base: 5
+      perLevel: 5
+  gold_mine:
+    defaultHp: 100
+    defaultBuildingTime: 60
+    defaultDestroyTime: 10
+    price: 100
+    food:
+      base: -1
+      perLevel: -1
+    gold:
+      base: 5
+      perLevel: 5
+  town_hall:
+    defaultHp: 200
+    defaultBuildingTime: 120
+    defaultDestroyTime: 10
+    price: 200
+    food:
+      base: -1
+      perLevel: -1
+    foodCapacity: 1000
+    goldCapacity: 1000
+  barracks:
+    defaultHp: 200
+    defaultBuildingTime: 120
+    defaultDestroyTime: 10
+    price: 200
+    food:
+      base: -1
+      perLevel: -1
+    troopTimeTrainingDecreasePerLevel: 2
+  academy:
+    defaultHp: 200
+    defaultBuildingTime: 120
+    defaultDestroyTime: 10
+    price: 200
+    food:
+      base: -1
+      perLevel: -1
+    troopUpgradeTimeCoefficient: 30
+    troopUpgradePriceCoefficient: 50
+  walls:
+    defaultHp: 200
+    defaultBuildingTime: 120
+    defaultDestroyTime: 10
+    price: 200
+    food:
+      base: -1
+      perLevel: -1
+  marketplace:
+    defaultHp: 200
+    defaultBuildingTime: 120
+    defaultDestroyTime: 10
+    price: 200
+    food:
+      base: -1
+      perLevel: -1
+  hideout:
+    defaultHp: 200
+    defaultBuildingTime: 120
+    defaultDestroyTime: 10
+    price: 200
+    food:
+      base: -1
+      perLevel: -1
+  mercenaries_inn:
+    defaultHp: 200
+    defaultBuildingTime: 120
+    defaultDestroyTime: 10
+    price: 200
+    food:
+      base: -1
+      perLevel: -1
+
+troops:
+  phalanx:
+    defaultHp: 10
+    defaultAttack: 5
+    defaultDefence: 10
+    defaultSpeed: 5
+    price: 25
+    foodConsumption: 1
+    trainingTimeCoefficient: 30
+  footman:
+    defaultHp: 20
+    defaultAttack: 10
+    defaultDefence: 5
+    defaultSpeed: 8
+    price: 25
+    foodConsumption: 1
+    trainingTimeCoefficient: 30
+  scout:
+    defaultHp: 5
+    defaultAttack: 2
+    defaultDefence: 2
+    defaultSpeed: 15
+    price: 50
+    foodConsumption: 1
+    trainingTimeCoefficient: 45
+  knight:
+    defaultHp: 35
+    defaultAttack: 15
+    defaultDefence: 10
+    defaultSpeed: 10
+    price: 75
+    foodConsumption: 1
+    trainingTimeCoefficient: 60
+  trebuchet:
+    defaultHp: 15
+    defaultAttack: 100
+    defaultDefence: 1
+    defaultSpeed: 3
+    price: 100
+    foodConsumption: 1
+    trainingTimeCoefficient: 80
+  diplomat:
+    defaultHp: 5
+    defaultAttack: 1
+    defaultDefence: 3
+    defaultSpeed: 8
+    price: 200
+    foodConsumption: 1
+    trainingTimeCoefficient: 30
+  settler:
+    defaultHp: 5
+    defaultAttack: 1
+    defaultDefence: 1
+    defaultSpeed: 6
+    price: 150
+    foodConsumption: 1
+    trainingTimeCoefficient: 75
+
+unitLevelStatsIncrement:
+  combatUnits:
+    increaseHp: 1
+    increaseAttack: 1
+    increaseDefence: 1
+  nonCombatUnits:
+    increaseSpeed: 1
+
+# /map endpoint
+# /register/kingdoms endpoint
+map:
+  size:
+    axisX: 20
+    axisY: 20
+
+# register/kingdoms endpoint
+kingdom:
+  goldAmount: 100
+  foodAmount: 100
+  goldProduction: 10
+  foodProduction: 10
+
+#just for exception test
+dummy:
+  string: string
+
+#middleware
+gameCycle:
+  length: 60
+
+# appuser model
+#set in seconds not sure if its convenient
+tokenExpirationTime:
+  forgottenPasswordToken: 3600
+  registrationToken: 86400
